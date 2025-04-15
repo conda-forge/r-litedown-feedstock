@@ -28,12 +28,12 @@ requirements:
     - cross-r-base {{ r_base }}    # [build_platform != target_platform]
   host:
     - r-base
-    - r-commonmark >=1.9.1
-    - r-xfun >=0.51
+    - r-commonmark >=1.9.5
+    - r-xfun >=0.52
   run:
     - r-base
-    - r-commonmark >=1.9.1
-    - r-xfun >=0.51
+    - r-commonmark >=1.9.5
+    - r-xfun >=0.52
 
 test:
   commands:
