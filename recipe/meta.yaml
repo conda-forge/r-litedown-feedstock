@@ -29,11 +29,11 @@ requirements:
   host:
     - r-base
     - r-commonmark >=2.0.0
-    - r-xfun >=0.54
+    - r-xfun >=0.55
   run:
     - r-base
     - r-commonmark >=2.0.0
-    - r-xfun >=0.54
+    - r-xfun >=0.55
 
 test:
   commands:
