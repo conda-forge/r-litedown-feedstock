@@ -1,4 +1,4 @@
-{% set version = "0.8" %}
+{% set version = "0.9" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/litedown_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/litedown/litedown_{{ version }}.tar.gz
-  sha256: 13d004556dee69130c151f8232b0f78ff6006f0bf77389314a04542ea35ab138
+  sha256: 35e1c58fd063c300d37ee0b1874827dbcbbc43b625a2d0011e4f4d5556e3f53f
 
 build:
   number: 0
@@ -29,11 +29,11 @@ requirements:
   host:
     - r-base
     - r-commonmark >=2.0.0
-    - r-xfun >=0.54
+    - r-xfun >=0.55
   run:
     - r-base
     - r-commonmark >=2.0.0
-    - r-xfun >=0.54
+    - r-xfun >=0.55
 
 test:
   commands:
