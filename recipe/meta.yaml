@@ -1,15 +1,15 @@
-{% set version = "0.10" %}
+{% set version = "1.0" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
   name: r-litedown
-  version: "{{ version|replace("-", "_") }}"
+  version: {{ version|replace("-", "_") }}
 
 source:
   url:
     - {{ cran_mirror }}/src/contrib/litedown_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/litedown/litedown_{{ version }}.tar.gz
-  sha256: 67bf33b205989ece20c02ee0082d042067a2c47a820f9e4e164e9b2edc4f4fba
+  sha256: 9261b3fe6a92adc04aa4c2fa99e240a8981ee4a077ce29deaf00717c7daa32f0
 
 build:
   number: 0
